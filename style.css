@@ -1,4 +1,4 @@
-/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +6,11 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Merriweather", serif;
   line-height: 1.6;
   scroll-behavior: smooth;
+  background-color: #000000;
+    color: #ffffff;
 }
 
 
@@ -17,7 +19,8 @@ body {
   top: 0;
   width: 100%;
   padding: 1rem 2rem;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(0, 0, 0, 0.95);
+  color: #ffffff;
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
@@ -34,7 +37,7 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
   font-weight: 500;
   transition: color 0.3s;
 }
@@ -45,17 +48,18 @@ body {
 
 /* Hero Section */
 .hero {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./image/foto-github.jpeg');
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1555066931-4365d14bab8c');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   color: white;
   text-align: center;
 }
+
 
 
 .hero-content h1 {
@@ -84,12 +88,13 @@ body {
 /* About Section */
 .about {
   padding: 5rem 2rem;
-  background: #f9f9f9;
+  background: #000000;
+    color: #ffffff;
 }
 .about-text1{
   font-size: 1.2rem;
   font-weight: 500;
-  color: #555;
+  color: #ffffff;
   line-height: 1.6;
   margin-top: 2rem;
 }
@@ -209,10 +214,11 @@ body {
 /* Enhanced Project Cards Styling */
 .projects {
   padding: 5rem 2rem;
-  background: #f9f9f9;
+  background: #000000;
 }
 .project-card {
-  background: white;
+  background: #111111;
+  color: #ffffff;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -237,13 +243,13 @@ body {
 }
 
 .project-card h3  {
-  color: #333;
+  color: #ffffff;
   padding: 15px 20px 5px;
   font-size: 1.4rem;
 }
 
 .project-card p {
-  color: #666;
+  color: #cccccc;
   padding: 0 20px 15px;
   font-size: 0.9rem;
   line-height: 1.5;
@@ -291,7 +297,7 @@ body {
   }
 }
 footer {
-  background: linear-gradient(135deg, #2D3250 0%, #424769 100%);
+  background: linear-gradient(135deg, #000000 0%, #111111 100%);
   color: #F7F7F7;
   text-align: center;
   padding: 1.5rem;

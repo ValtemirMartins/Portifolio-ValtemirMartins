@@ -159,6 +159,16 @@ body {
 .contact-item:hover {
   transform: translateY(-10px);
 }
+.contact-item .fa-file-download {
+  color: #ffffff;
+  font-size: 2.2rem;
+  transition: transform 0.3s ease;
+}
+
+.contact-item:hover .fa-file-download {
+  transform: translateY(-3px);
+  color: #007bff;
+}
 
 .contact-item i {
   font-size: 2rem;

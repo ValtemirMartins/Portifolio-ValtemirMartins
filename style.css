@@ -96,11 +96,11 @@ body {
   font-weight: 500;
   color: #ffffff;
   line-height: 1.6;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .about-content {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -120,11 +120,16 @@ body {
 }
 
 .progress {
-  height: 10px;
+  height: 5px;
   background: #007bff;
   border-radius: 5px;
-  animation: progressBar 1.5s ease-in-out;
+  width: 50%;
 }
+
+.skill[data-aos].aos-animate .progress {
+  animation: progressBar 3s ease-in-out forwards;
+}
+
 .contact {
   padding: 5rem 2rem;
   background: var(--secondary-color);

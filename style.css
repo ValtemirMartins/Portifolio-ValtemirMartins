@@ -100,7 +100,7 @@ body {
 }
 .about-content {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -345,4 +345,91 @@ footer::before {
   height: 3px;
   background: linear-gradient(to right, #7077A1, #F6B17A);
   opacity: 0.8;
+}
+/* Small Mobile Devices (320px - 480px) */
+@media screen and (max-width: 480px) {
+  .hero-content h1 {
+      font-size: 1.8rem;
+  }
+  
+  .typing-text {
+      font-size: 1rem;
+  }
+  
+  .about img {
+      width: 100%;
+      max-width: 400px;
+  }
+  
+  .about-text1 {
+      font-size: 1rem;
+  }
+  
+  .project-card h3 {
+      font-size: 1.2rem;
+  }
+  
+  .project-links .btn {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+  }
+  
+  footer p {
+      font-size: 0.9rem;
+  }
+}
+
+/* Mobile Navigation */
+@media screen and (max-width: 768px) {
+  .navbar {
+      padding: 0.8rem 1rem;
+  }
+  
+  .menu-toggle {
+      display: block;
+      cursor: pointer;
+      z-index: 1001;
+  }
+  
+  .menu-toggle span {
+      display: block;
+      width: 25px;
+      height: 2px;
+      background-color: #fff;
+      margin: 5px 0;
+      transition: 0.3s;
+  }
+  
+  .nav-links {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      height: 100vh;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.95);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s;
+  }
+  
+  .nav-links.active {
+      right: 0;
+  }
+  
+  .nav-links a {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+  }
+}
+
+/* Tablet Devices (768px - 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about img {
+      width: 500px;
+  }
+  
+  .project-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
 }
